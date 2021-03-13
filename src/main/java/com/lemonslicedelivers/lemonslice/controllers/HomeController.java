@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
     @RequestMapping("")
-    @ResponseBody
     public String index(Model model) {
         model.addAttribute("title", "My Webapp");
-        return "webapp/src/index.html";
+        return "index.html";
     }
 }
